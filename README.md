@@ -9,5 +9,5 @@ For the spring semester in 2025, I will be expanding on my data science skills a
 ## Contact Information
 
 Emma Powers 
-[Linkedin]([https://www.linkedin.com/in/emma-powers1/])
+[Linkedin](https://www.linkedin.com/in/emma-powers1/)
 
