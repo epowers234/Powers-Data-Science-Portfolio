@@ -45,7 +45,7 @@ The dataset used in this project was sourced from [2008 Medalists Original Sourc
 ## Data Processing and Analysis
 
 1.   **Tidying the data**
-   - Used the Pandas library. 
+   - Used the pandas library. 
    - Followed basic tidy data commands such as df.melt, df.dropna(), df.str.split, df.str.replace, and df.rename.
 2.   **Generating a stacked barplot**
    - Used From Data to Viz as a starting point.
