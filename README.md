@@ -9,7 +9,14 @@ For the spring semester in 2025, I will be expanding on my data science skills a
 ## Streamlit App
 
 Created a basic Streamlit app that sorts 100 different organizations and their basic information based on the names of the organizations. 
-- Check out more: [Streamlit](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/basic-streamlit-app)
+
+### What I learned:
+- How to use Streamlit
+- Visualization techniques
+- How to make complex looking graphs in a simple and quick manner
+  
+Check out more: [Streamlit](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/basic-streamlit-app)
+
 
 ## Tidy Data 
 
