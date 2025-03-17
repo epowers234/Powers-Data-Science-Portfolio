@@ -30,7 +30,7 @@ Jupyter Notebooks was used as the platform for Python code. I used the Anaconda 
 3.   **From Data to Viz as a starting point for data visualization**
    - Visit [From Data to Viz](https://www.data-to-viz.com/).
    - Code derived from the stacked bar graph and circular bar graph sections.
-4.   **Necessary Libraries**
+4.   **Necessary libraries that need to be imported**
    - Pandas
    - Numpy
    - Matplotlib.pyplot
