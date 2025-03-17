@@ -20,7 +20,7 @@ Check out more: [Streamlit](https://github.com/epowers234/Powers-Data-Science-Po
 
 ## Tidy Data 
 
-Cleaned and used tidy data principles to organize a data set on the medalists from the 2008 Olympic games to create a standardized data set that can be used to create visualizations and pivot tables for analysis using Python and Jupyter Notebooks. 
+Cleaned and used tidy data principles to organize a data set on the medalists from the 2008 Olympic games to create a standardized data set that can be used to create visualizations and pivot tables for analysis using Python and Jupyter Notebooks. Having a strong foundation in data cleaning is an important and necessary step in being a data scientists because this is often the most complex, difficult, and important step in data analysis. 
 ### What I learned:
 - The importance of cleaning and tidying data
 - How to generate complex visuals to depict a data set
