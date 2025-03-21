@@ -63,24 +63,24 @@ The dataset used in this project was sourced from [2008 Medalists Original Sourc
 
 ## Results and Visualizations
 ### **Stacked barplot**
-<img width="460" alt="Screenshot 2025-03-17 at 9 45 51 AM" src="https://github.com/user-attachments/assets/c3fa735b-e481-4c00-b5fc-88e923c45699" />
+<img width="341" alt="Screenshot 2025-03-21 at 1 16 17 PM" src="https://github.com/user-attachments/assets/80d54099-2e65-43f8-a3c8-cbd6d38dd23b" />
 <br /> Showed that more medals are awarded to male participants than female participants overall. 
 
 ### **Circular barplots**
 #### Male: 
-<img width="506" alt="Screenshot 2025-03-17 at 9 48 37 AM" src="https://github.com/user-attachments/assets/6137e5d3-0db9-490f-b5dc-8ae45dba8112" />
+<img width="502" alt="Screenshot 2025-03-21 at 1 16 28 PM" src="https://github.com/user-attachments/assets/01d6813b-bf9b-4924-8da7-01ece3fe0ca5" />
 
 #### Female: 
-<img width="474" alt="Screenshot 2025-03-17 at 9 48 24 AM" src="https://github.com/user-attachments/assets/a273daa9-64ac-4397-94c7-937aff5b133a" />
+<img width="509" alt="Screenshot 2025-03-21 at 1 16 34 PM" src="https://github.com/user-attachments/assets/b38ca0be-1218-49d1-aac5-e3e018501911" />
 
 <br /> These two graphs provide insight individually by demonstrating what events are offered and how many athletes participate by gender. Then, one can compare both of them to see the differences on what is offered by gender in the 2008 Olympics. 
 
 ### **Pivot tables**
 #### Total medal count for both genders:
-<img width="183" alt="Screenshot 2025-03-17 at 9 50 17 AM" src="https://github.com/user-attachments/assets/f7b4bb57-eb5b-4260-b5a6-a2903e4824ca" />
+<img width="169" alt="Screenshot 2025-03-21 at 1 19 39 PM" src="https://github.com/user-attachments/assets/23605407-579f-41d9-9d5b-ddb775d9d86a" />
 
 #### Total medal count for both genders broken down by medal type: 
-<img width="258" alt="Screenshot 2025-03-17 at 9 50 38 AM" src="https://github.com/user-attachments/assets/95db1e0e-aa6e-451c-9ba8-b4116dcbe483" />
+<img width="265" alt="Screenshot 2025-03-21 at 1 19 45 PM" src="https://github.com/user-attachments/assets/08c622df-9e2e-4471-a02d-6db03f747d34" />
 
 <br /> These tables are a way to visualize and understand how different events have a different number of awarded medals for the overall games, not differentiated by gender. 
 
