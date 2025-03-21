@@ -28,7 +28,7 @@ Cleaned and used tidy data principles to organize a data set on the medalists fr
 - Applying different libraries in one cohesive project
 
 ### Example visualization: 
-<img width="460" alt="Screenshot 2025-03-17 at 9 45 51 AM" src="https://github.com/user-attachments/assets/c3fa735b-e481-4c00-b5fc-88e923c45699" />
+<img width="341" alt="Screenshot 2025-03-21 at 1 16 17 PM" src="https://github.com/user-attachments/assets/4d1ce6d3-7ebf-4ed4-b64e-7bc362d97ded" />
 <br />
 
 Check out more: [TidyData-Project](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/TidyData-Project)
