@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 # -----------------------------------------------
 # Application Information
 # -----------------------------------------------
-st.title("KNN Performance: Scaled vs. Unscaled")
+st.title("KNN Performance: Scaled vs. Unscaled ")
 st.markdown("""
 ### About This Application
 This interactive application demonstrates the performance of a K-Nearest Neighbors (KNN) classifier using the Titanic dataset. You can:
