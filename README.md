@@ -35,13 +35,17 @@ Check out more: [TidyData-Project](https://github.com/epowers234/Powers-Data-Sci
 
 ## Machine Learning Streamlit App
 
-Back at the start of the semester, we generated a very brief and simple Streamlit app (as seen above). Now, we built upon those basic skills and incorperated our new knowledge of machine learning into a more complex and interactive Streamlit App. I created a app where you can **compare** a logistic regression classifier to a decision tree classifier with your **own** data set. The app will 
+Back at the start of the semester, we generated a very brief and simple Streamlit app (as seen above). Now, we built upon those basic skills and incorperated our new knowledge of machine learning into a more complex and interactive Streamlit App. I created a app where you can **compare** a logistic regression classifier to a decision tree classifier with your **own** data set. 
+
+Additionally, the app has extensive explanations and definitions of what is occuring, so people with limited background can learn how to interact with the app as they go. It is a perfect way to grow as a someone learning machine learning!  
+
+The app will 
 1. Upload your data set
 2. Process the data
 3. Create a machine learning model of your choice
 4. Adjust the model outcomes based on your desired hyperparameters
 5. Create the corresponding graphs and results depending on the model selected so you can see its' performance
-Additionally, the app has extensive explanations and definitions of what is occuring, so people with limited background can learn how to interact with the app as they go. It is a perfect way to grow as a someone learning machine learning! 
+<br /> 
 
 ### What I learned:
 - How logistic regression and decision tree machine learning models work
