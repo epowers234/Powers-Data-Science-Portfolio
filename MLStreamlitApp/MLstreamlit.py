@@ -17,7 +17,7 @@ st.title("Exploring the Differences in a Decision Tree Classifier vs a Logistic 
 
 st.expander("About This Application", expanded=True).markdown("""
 This interactive application demonstrates the differences in performance for your own CSV file using either a Decision Tree Classifier or a Logistic Regression Classifier. You can:
-- **Upload your own data set** to see how how the model performane handles your own data styles.
+- **Upload your own data set** to see how how the model performance handles your own data styles.
 - **Select the desired model** to explore how your data set is handled in either a Decision Tree Classifier or in a Logistic Regression Classifier.
 - **Select the target and feature columns** to train the model that you are looking for.
 - **Adjust the model settings** with sliders to see how different parameters affect the performance.
@@ -139,11 +139,11 @@ elif model_choice == "Logistic Regression":
 st.subheader("Step 3: Select your Model")
 st.markdown(
     """Deciding which model to use is an important step in the machine learning process. ***Decision trees*** can handle many different types of data (including numerical or categorical) and makes predictions by building 'trees' to guide decision making. 
-     ***Logistic regression*** is a model that predicts the likehood of a binary outcome based on predictor variables. Each of them have pros and cons when looking at a data set, so this application is meant to help you determine which one is more accurate and better for your dataset."""
+     ***Logistic regression*** is a model that predicts the likelihood of a binary outcome based on predictor variables. Each of them have pros and cons when looking at a data set, so this application is meant to help you determine which one is more accurate and better for your dataset."""
             )
 st.expander("Decision Tree Description", expanded=True).markdown("""
 Decision Trees predicts the target variable by creating simple if-then-else decision rules to classify the features. 
-**Pros:** They are simple and easy to visualize with little data preperation
+**Pros:** They are simple and easy to visualize with little data preparation.
 **Cons:** They can become overly complex quickly and are prone to overfitting.
         
 #### Hyperparameters:
