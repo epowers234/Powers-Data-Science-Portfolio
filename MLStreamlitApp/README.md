@@ -11,8 +11,7 @@ Learning how to navigate different machine learning models and the differences i
 3. [Codes and Resources Used](#codes-and-resources-used)
 4. [Data](#data)
 5. [Logistic Regression Overview](#Logistic-Regression-Overview)
-6. [Decision Tree Overview] (#Decision-Tree-Overview)
-7. [Future Work](#future-work)
+6. [Decision Tree Overview](#Decision-Tree-Overview)
 
 ## Installation and Setup
 
