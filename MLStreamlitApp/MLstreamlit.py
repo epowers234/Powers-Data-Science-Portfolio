@@ -152,7 +152,7 @@ Decision Trees predicts the target variable by creating simple if-then-else deci
 - **Min Samples Split**: The minimum number of samples required to split an internal node. 
     - This prevents the model from creating splits that are too specific if not enough of the training data explains that split.
 - **Criterion**: The function to measure the quality of a split.
-    - **gini* is for the Gini impurity which quantifies the likelihood of a random sample being incorrectly labeled if it was randomly labeled according to the distribution of labels.
+    - **gini** is for the Gini impurity which quantifies the likelihood of a random sample being incorrectly labeled if it was randomly labeled according to the distribution of labels.
          -   A lower Gini impurity indicates less impurity.
     - **entropy** is the measure of the amount of disorder or uncertainty in the data.
         - A lower entropy indicates less disorder.
