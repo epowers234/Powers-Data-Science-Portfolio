@@ -62,7 +62,7 @@ The app will
 <img width="350" alt="Screenshot 2025-04-14 at 10 28 20 AM" src="https://github.com/user-attachments/assets/7d4a079c-bf5d-415e-9931-71d515698e14" />
 <br /> This graph is generated in logistic regression models for users to determine the model's performance and assess how hyperparamaters affect the model's ability to predict the outcome. 
 
-Check out more: [TidyData-Project](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/TidyData-Project)
+Check out more: [MLStreamlitApp](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/MLStreamlitApp)
 
 ## Contact Information
 
