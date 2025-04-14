@@ -34,17 +34,15 @@ From there, you just need a dataset to explore! There are two sample options bel
 
 ## Codes and Resources Used
 
-1.   **Tidy Data Cheat Sheet**
-   - Reference sheet: [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf).
-   - Aided when performing the Tidy Data commands at the start.
-2.   **Purpose of Tidy Data**
-   - Visit [Tidy Data by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf).
-   - Provides background on the importance of Tidy Data.
-   - Cited in my description of the purpose in my Jupyter File.  
-3.   **From Data to Viz as a starting point for data visualization**
-   - Visit [From Data to Viz](https://www.data-to-viz.com/).
-   - Code derived from the stacked bar graph and circular bar graph sections.
-4.   **Necessary libraries that need to be imported**
+1.   **Logistic Regression Background and References**
+   - Reference webpage: [ROC and AUC Background](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc).
+   - Reference webpage: [Logistic Regression Overview](https://www.bogotobogo.com/python/scikit-learn/scikit-learn_logistic_regression.php).
+   - Aided when writing out the definitions and guides for the logistic regression classifier model.
+2.   **Decision Tree Background and References**
+   - Reference webpage: [Decision Tree Guide](https://scikit-learn.org/stable/modules/tree.html).
+   - Reference webpage: [Gini vs Entropy](https://quantdare.com/decision-trees-gini-vs-entropy/).
+   - Provided insight into coding decision trees as well as the background on what the hyperparameters mean for explanations in the app. 
+3.   **Necessary libraries that need to be imported**
    - Pandas
    - Numpy
    - Matplotlib.pyplot
@@ -59,9 +57,17 @@ From there, you just need a dataset to explore! There are two sample options bel
 
 ## Data
 
-The dataset used in this project is initially untidy, but it contains each medalist's name, what type of medal received, and in what event that is sorted by gender. 
+Any data set can be used and uploaded to the sidebar in the app. However, here are two data sets to explore that are designed for each type of model, so you can become comfortable prior to exploring a new dataset. 
 
-The dataset used in this project was sourced from [2008 Medalists Original Source](https://edjnet.github.io/OlympicsGoNUTS/2008/). It was adapted to this untidy source [olympics_08_medalists.csv](https://github.com/user-attachments/files/19287715/olympics_08_medalists.csv). Ensure you download the dataset and place it in the appropriate data directory within the project folder.
+**Logistic Regression Sample Data Set**
+[logistic regression dataset-Social_Network_Ads.csv](https://github.com/user-attachments/files/19736490/logistic.regression.dataset-Social_Network_Ads.csv)
+
+The dataset used in this project was sourced from [Logistic Regression Social Network Ads Dataset](https://github.com/sam16tyagi/Machine-Learning-techniques-in-python/tree/master). Ensure you download the dataset and upload it to the app. To make sure it operates correctly in the logistic regression model, a binary value has to be the target column. To do this initially, make default be the target column. Otherwise, an error will appear when trying to generate an ROC curve. 
+
+**Decision Tree Sample Data Set**
+[diabetes_dataset.csv](https://github.com/user-attachments/files/19736583/diabetes_dataset.csv)
+
+The dataset used in this project was sourced from [Decision Tree Diabetes Sample Data Set](https://github.com/sam16tyagi/Machine-Learning-techniques-in-python/tree/master). Ensure you download the dataset and upload it to the app. An example for a target column would be outcome for this dataset. 
 
 ## Data Processing and Analysis
 
