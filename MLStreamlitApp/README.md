@@ -73,14 +73,14 @@ More background is given on the app, but here is an overview:
 Logistic regression estimates the probability that an input is within a certain class in a simple manner for binary classification problems. 
 
 **Hyperparameters**:
--Inverse Regularization Strength
- -Controls complexity of model
--Max iterations
- -Nuber of trainings the model performs 
--Test set size 
- -Percentage of dataset used to train the model 
+- Inverse Regularization Strength
+ - Controls complexity of model
+- Max iterations
+ - Number of trainings the model performs 
+- Test set size 
+ - Percentage of dataset used to train the model 
  
-**Example of a logistic regression made in the app**
+**Example of a logistic regression made in the app**:
 As an example, I uploaded the example social networks dataset to the app and selected decision tree with these hyperparameters:
 - Target column = Purchased
 - Feature columns = Age, Gender
@@ -110,16 +110,17 @@ More background is given on the app, but here is an overview:
 Decision trees are powerful machine learning models that create rules to classify target features in a simplistic manner, but they quickly can become complex and overfit.
 
 **Hyperparameters**:
--Max depth
- -How many levels the tree will go in depth
--Min samples split
- -Minimum number of samples to cause a split to occur
--Criterion
- -Either gini (quantifies likelihood of sample being labeled incorrectly) or entropy (amount of uncertainty in a dataset)
--Test set size 
- -Percentage of dataset used to train the model 
+- Max depth
+ - How many levels the tree will go in depth
+- Min samples split
+ - Minimum number of samples to cause a split to occur
+- Criterion
+ - Either gini (quantifies likelihood of sample being labeled incorrectly) or entropy (amount of uncertainty in a dataset)
+- Test set size 
+ - Percentage of dataset used to train the model 
  
-**Example of a decision tree made in the app**
+**Example of a decision tree made in the app**:
+
 As an example, I uploaded the diabetes dataset to the app and selected decision tree with these hyperparameters:
 - Target column = Outcome
 - Feature columns = Glucose, insulin, age
