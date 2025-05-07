@@ -4,23 +4,37 @@ Repository for the projects and work performed in Introduction to Data Science a
 
 ## Description
 
-For the spring semester in 2025, I will be expanding on my data science skills and uploading them within this portfolio to track my progress and growth. Projects will include basic data science skills such as data visualization, EDA, ethical research design, LLMs, predictive modeling, etc. 
+For the spring semester in 2025, I expanded on my data science skills and uploaded them within this portfolio to track my progress and growth. Projects and knowledge gained included basic data science skills such as data visualization, ethical research design, LLMs, predictive modeling (both supervised and unsupervised), etc. 
+
+Additionally, I gained a signficant amount of confidence in my coding ability, so check out my progress and what I accomplished this semester!
+
+## Table of Contents
+
+1. [Description](#description)
+2. [Basic Streamlit App](#streamlit-app)
+3. [Tidy Data](#tidy-data)
+4. [Supervised Machine Learning Streamlit App](#supervised-machine-learning-streamlit-app)
+5. [Unsupervised Machine Learning Streamlit App](#unsupervised-machine-learning-streamlit-app)
 
 ## Streamlit App
+Here, I learned how to create a basic Streamlit app for the first time by making an app that sorts 100 different organizations and their basic information based on the names of the organizations. This was my first introduction to in-depth coding and generating an app, so it was definitely a learning curve to build upon in my subsequent projects!
 
-Created a basic Streamlit app that sorts 100 different organizations and their basic information based on the names of the organizations. 
+The app will allow you to sort through companies' data and just look at one of the companies from a drop-down menu. 
 
 ### What I learned:
 - How to use Streamlit
 - Visualization techniques
 - How to make complex looking graphs in a simple and quick manner
-  
+
+### Example visualization: 
+<img width="300" alt="Screenshot 2025-05-07 at 10 36 39 AM" src="https://github.com/user-attachments/assets/e5ace154-db50-47c3-9a5f-6b06d4085cc4" />
+
+<br />
 Check out more: [Streamlit](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/basic-streamlit-app)
 
-
-## Tidy Data 
-
+## Tidy Data
 Cleaned and used tidy data principles to organize a data set on the medalists from the 2008 Olympic games to create a standardized data set that can be used to create visualizations and pivot tables for analysis using Python and Jupyter Notebooks. Having a strong foundation in data cleaning is an important and necessary step in being a data scientists because this is often the most complex, difficult, and important step in data analysis. 
+
 ### What I learned:
 - The importance of cleaning and tidying data
 - How to generate complex visuals to depict a data set
@@ -28,29 +42,28 @@ Cleaned and used tidy data principles to organize a data set on the medalists fr
 - Applying different libraries in one cohesive project
 
 ### Example visualization: 
-<img width="341" alt="Screenshot 2025-03-21 at 1 16 17 PM" src="https://github.com/user-attachments/assets/4d1ce6d3-7ebf-4ed4-b64e-7bc362d97ded" />
+<img width="300" alt="Screenshot 2025-03-21 at 1 16 17 PM" src="https://github.com/user-attachments/assets/4d1ce6d3-7ebf-4ed4-b64e-7bc362d97ded" />
 <br />
 
 Check out more: [TidyData-Project](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/TidyData-Project)
 
-## Machine Learning Streamlit App
+## Supervised Machine Learning Streamlit App
 
 Back at the start of the semester, we generated a very brief and simple Streamlit app (as seen above). Now, we built upon those basic skills and incorporated our new knowledge of machine learning into a more complex and interactive Streamlit App. I created an app where you can **compare** a logistic regression classifier to a decision tree classifier with your **own** data set. 
 
 Additionally, the app has extensive explanations and definitions of what is occurring, so people with limited background can learn how to interact with the app as they go. It is a perfect way to grow as someone learning machine learning!  
 
 The app will 
-1. Upload your data set
+1. Upload your dataset
 2. Process the data
 3. Create a machine learning model of your choice
 4. Adjust the model outcomes based on your desired hyperparameters
-5. Create the corresponding graphs and results depending on the model selected so you can see its' performance
-<br /> 
+5. Create the corresponding graphs and results depending on the model selected so you can see its performance
 
 ### What I learned:
 - How logistic regression and decision tree machine learning models work
 - How their hyperparameters affect the model
-- Creating a more complex Streamlit interactive app that can be accessed publically
+- Creating a more complex Streamlit interactive app that can be accessed publicly
 - Applying different models and techniques in a cumulative way
 - Grew in my Python skills significantly
 
@@ -63,6 +76,37 @@ The app will
 <br /> This graph is generated in logistic regression models for users to determine the model's performance and assess how hyperparamaters affect the model's ability to predict the outcome. 
 
 Check out more: [MLStreamlitApp](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/MLStreamlitApp)
+
+## Unsupervised Machine Learning Streamlit App
+
+For one final project, I built upon my previous project on making a supervised machine learning app with 2 different models. Here, I made a cumulative Streamlit App that incorporates 3 different unsupervised machine learning modes (PCA, K-Means Clustering, and Hierarchical Clustering). I created this app where you can **compare** all three of these models with your **own** data set, where the app has extensive explanations and definitions. This allows people with limited backgrounds can learn how to interact with the app as they go. It is a perfect way to grow as someone learning machine learning!  
+
+The app will 
+1. Upload your dataset
+2. Process the data
+3. Use a machine learning algorithm of your choice
+4. Adjust the model outcomes based on your desired parameters
+5. Create the corresponding graphs and results depending on the model selected so you can see its performance
+
+### What I learned:
+- How PCA, K-means, and Hierarchical clustering models work, and what performance metrics are 
+- How their parameters affect the model
+- Creating an even more complex Streamlit interactive app that can be accessed publicly
+- Learned how to handle large amounts of code for graphs and how to cluster sections together so they don't need to be repeated for efficiency
+
+### Example of a 2D PCA graph generated by the model: 
+<img width="350" alt="Screenshot 2025-05-07 at 9 45 52 AM" src="https://github.com/user-attachments/assets/00a5d208-6513-4de5-9d68-0d5cb37ecd20" />
+<br /> This graph is generated for users to see how PCA separates the data, and if true values are selected, then you can see how the model is clustering the data points. 
+
+### Example of a silhouette score graph generated by the model for K-means clustering: 
+<img width="350" alt="Screenshot 2025-05-07 at 10 01 55 AM" src="https://github.com/user-attachments/assets/d1273321-e347-4ff8-a436-81055a3bc175" />
+<br /> This graph tells you what the optimal k is based on the silhouette score. The silhouette score tells you how well-seperated the clusters are, so a higher value is desired. 
+
+### Example of a dendrogram generated by the model for hierarchical clustering: 
+<img width="350" alt="Screenshot 2025-05-07 at 10 13 49 AM" src="https://github.com/user-attachments/assets/3527c2de-5a02-4a52-bdbd-9eddcb6ba29f" />
+<br /> This is a visual representation of how hierarchical clustering works at clustering the data together.
+
+Check out more: [MLUnsupervisedApp](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
 
 ## Contact Information
 
