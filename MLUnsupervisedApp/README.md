@@ -10,8 +10,9 @@ Learning how to navigate 3 different unsupervised machine learning models and th
 2. [Installation and Setup](#installation-and-setup)
 3. [Codes and Resources Used](#codes-and-resources-used)
 4. [Data](#data)
-5. [Logistic Regression Overview](#Logistic-Regression-Overview)
-6. [Decision Tree Overview](#Decision-Tree-Overview)
+5. [Principal Component Analysis Overview](#principal-component-analysis-overview)
+6. [K-Means Clustering Overview](#k-means-clustering-overview)
+7. [Hierarchical Clustering Overview](#hierarchical-clustering-overview)
 
 ## Installation and Setup
 
@@ -22,7 +23,7 @@ If you want to access the app locally, do these steps on your VSCode terminal of
 1. Download streamlit in the terminal by entering this code:
 ```pip install streamlit```
 2. Ensure you are in the correct directory as your file in the terminal by using ```ls``` (only on Mac) to view in your current directory, ```cd foldername``` to go deeper into a folder or go directly into a specific spot.
-3. Once in the current location run this code in the terminal: ```streamlit run MLstreamlit.py```
+3. Once in the current location run this code in the terminal: ```streamlit run unsupervisedstreamlit.py```
 4. Then, a local webpage should pop up and you can work on the app there.
 <br />
 
@@ -68,76 +69,108 @@ Any data set can be used and uploaded to the sidebar in the app. However, here i
 Here is the example Pizza brand data set: [Pizza.csv](https://github.com/user-attachments/files/20075543/Pizza.csv). Ensure you download the dataset and upload it to the app. The brand would be the true column if you choose, and the other variables are the features. 
 This dataset was sourced from [Pizza Data Set Source](https://github.com/f-imp/Principal-Component-Analysis-PCA-over-3-datasets).
 
-## Logistic Regression Overview 
+## Principal Component Analysis Overview
 More background is given on the app, but here is an overview: 
-Logistic regression estimates the probability that an input is within a certain class in a simple manner for binary classification problems. 
+Principal Component Analysis (PCA) is a technique that transforms the data by reducing the dimensions of the data where the greatest variance lies on the first principal component and the second greatest variance on the second component, etc. 
 
 **Hyperparameters**:
-- Inverse Regularization Strength
- - Controls complexity of model
-- Max iterations
- - Number of trainings the model performs 
-- Test set size 
- - Percentage of dataset used to train the model 
+- Number of Principal Components
+  - The number of components to keep. 
  
-**Example of a logistic regression made in the app**:
-As an example, I uploaded the example social networks dataset to the app and selected decision tree with these hyperparameters:
-- Target column = Purchased
-- Feature columns = Age, Gender
-- Inverse Regularization Strength = 4.69
-- Max iterations = 185
-- Test set size (%) = 30
+**Example of PCA made in the app**:
+As an example, I uploaded the example pizza dataset to the app and selected PCA with these parameters:
+- Feature columns = Mois, Prot, Fat, Sodium, Carb
+- True label column = Brand
+- Number of Principal Components = 3
 
 ### Results: 
-### **Accuracy Score**
-<img width="196" alt="Screenshot 2025-04-14 at 10 27 43 AM" src="https://github.com/user-attachments/assets/ab885ae3-5cdf-4728-96b3-74c23654871e" />
-<br /> The model predicts the correct value 88% of the time. 
+#### **PCA 2D Projection of Data**
+<img width="400" alt="Screenshot 2025-05-07 at 9 45 52 AM" src="https://github.com/user-attachments/assets/bda330fe-2d96-45b9-be10-1cc382945dac" />
+<br /> Visualizes the 2D components of the data, and since a true column was selected (brand), the dots are 
+colored to their corresponding brand. 
 
-### **Confusion Matrix**
-<img width="300" alt="Screenshot 2025-04-14 at 10 27 50 AM" src="https://github.com/user-attachments/assets/19898a2e-1a59-49fb-ad5a-71f0a3673ffd" />
-<br /> This is a way to see where the model is failing or doing well at predicting positive and negative values. 
+#### **Explained Variance Table**
+<img width="400" alt="Screenshot 2025-05-07 at 9 47 50 AM" src="https://github.com/user-attachments/assets/fbca3c50-40a7-4674-b90d-3cc6feda0048" />
+<br /> This shows where the variance is in each principal component, broken down by both explained variance ratio and cumulative explained variance. 
 
-### **Classification report**
-<img width="300" alt="Screenshot 2025-04-14 at 10 27 55 AM" src="https://github.com/user-attachments/assets/79358305-986f-4394-97ea-913ac4a27e19" />
-<br /> A classification report provides another way of looking at how well the model is doing at classifying the correct values and in what ways is it failing. You can optimize these values depending on what you want to emphasize. 
+#### **PCA Variance Explained Plot**
+<img width="400" alt="Screenshot 2025-05-07 at 9 49 57 AM" src="https://github.com/user-attachments/assets/4aca7edc-9b96-4af6-9759-2f20b8b3dd0c" />
+<br /> A combined bar and line plot where the bar plot shows the individual variance explained by each principal component, and the line plot depicts the cumulative variance explained by the first n components (in this case, 3 components). 
 
-### **ROC Curve and AUC Score**
-<img width="300" alt="Screenshot 2025-04-14 at 10 28 20 AM" src="https://github.com/user-attachments/assets/fbdb3357-c582-4394-9411-f88f3be8bf56" />
-<br /> An ROC curve compares the true positive rate to the false positive rate and shows how well it is doing compared to a random guess. The AUC score is the area under the ROC curve to quantify its performance. 
+#### **Biplot**
+<img width="400" alt="Screenshot 2025-05-07 at 9 52 20 AM" src="https://github.com/user-attachments/assets/08a09631-c69c-42ef-9890-c401ff24b0ed" />
+<br /> A Biplot will show the projected data points and the contributions of the original features. The vectors of the features show the direction in which they contribute the most to the variance. 
 
-## Decision Tree Overview 
+## K-Means Clustering Overview
 More background is given on the app, but here is an overview: 
-Decision trees are powerful machine learning models that create rules to classify target features in a simplistic manner, but they quickly can become complex and overfit.
+K-Means Clustering groups data into similar groups based on the distance between their features using centroids. 
 
 **Hyperparameters**:
-- Max depth
- - How many levels the tree will go in depth
-- Min samples split
- - Minimum number of samples to cause a split to occur
-- Criterion
- - Either gini (quantifies likelihood of sample being labeled incorrectly) or entropy (amount of uncertainty in a dataset)
-- Test set size 
- - Percentage of dataset used to train the model 
+- Number of clusters (k):
+ - The number of clusters and centroids that will form.
+- Initialization method: The method used to initialize the centroids. 
+ - Either k-means++ (enhanced k-means algorithm) or random (initial cluster centers randomly)
+- Max iterations: 
+ - Maximum number of iterations for the algorithm to converge 
  
-**Example of a decision tree made in the app**:
+**Example of K-means clustering used in the app**:
 
-As an example, I uploaded the diabetes dataset to the app and selected decision tree with these hyperparameters:
-- Target column = Outcome
-- Feature columns = Glucose, insulin, age
-- Max depth = 5
-- Min samples split = 2
-- Criterion = gini
-- Test set size (%) = 30
+As an example, I uploaded the pizza dataset to the app and selected K-means clustering with these parameters:
+- Feature columns = Mois, Prot, Fat, Sodium, Carb
+- True label column = Brand
+- Number of clusters (k) = 5
+- Initialization method = k-means++
+- Max iterations: 400
 
 ### Results: 
-### **Accuracy Score**
-<img width="223" alt="Screenshot 2025-04-14 at 10 12 01 AM" src="https://github.com/user-attachments/assets/627fabfc-9301-4c39-9a70-2d740309346c" />
-<br /> The model predicts the correct value 73% of the time. 
+#### **2D PCA Projection**
+<img width="400" alt="Screenshot 2025-05-07 at 10 00 46 AM" src="https://github.com/user-attachments/assets/1a665bcd-7ffb-4fa6-94ae-ac483e34a688" />
+<br /> Since K-Means clustering also uses a bit of PCA, it can be helpful to see the 2D PCA projection here as well. Visualizes the 2D components of the data, and since a true column was selected (brand), the dots are colored to their corresponding brand. 
 
-### **Confusion Matrix**
-<img width="300" alt="Screenshot 2025-04-14 at 10 12 07 AM" src="https://github.com/user-attachments/assets/aa55274e-f79e-4441-9353-5772af6085a2" />
-<br /> This is a way to see where the model is failing or doing well at predicting positive and negative values. 
+#### **Elbow Plot**
+<img width="300" alt="Screenshot 2025-05-07 at 10 01 50 AM" src="https://github.com/user-attachments/assets/a8b44ae4-e0a5-4f07-8045-d0ff74e1370e" />
+<br /> The elbow plot allows us to determine where the optimal number of clusters is. The optimal number is where the WCSS begins to decrease at a slower rate. Here, you could say it would likely be around k=5. 
 
-### **Classification report**
-<img width="300" alt="Screenshot 2025-04-14 at 10 14 03 AM" src="https://github.com/user-attachments/assets/56898c5b-f025-42a8-8228-94921a7afd6b" />
-<br /> A classification report provides another way of looking at how well the model is doing at classifying the correct values and in what ways is it failing. You can optimize these values depending on what you want to emphasize. 
+#### **Silhouette Score Plot**
+<img width="300" alt="Screenshot 2025-05-07 at 10 01 55 AM" src="https://github.com/user-attachments/assets/91cea93e-050f-456b-940a-4d4ca631b44f" />
+<br /> A silhouette score measures how well the clusters are separated. A number closer to 1 indicates better separated and more dense clusters. Based on the graph and the reported best k by silhouette score that the model produces, the optimal k for this model is 5 with a score of 0.684. 
+
+#### **Evaluation Against True Labels**
+<img width="200" alt="Screenshot 2025-05-07 at 10 05 29 AM" src="https://github.com/user-attachments/assets/3b9d10cc-2ca6-4ae3-acae-2a4f5d503fd7" />
+<br /> To determine how accurate the model is at predicting the correct classification in the clusters, it is optional to select a true label column. By choosing this, the user gets the calculated ARI score (measures similarity between cluster assignments and true labels) and accuracy score (expresses how well the model correctly classifies the data). A higher number is desired for both. 
+
+## Hierarchical Clustering Overview
+More background is given on the app, but here is an overview: 
+Hierarchical clustering builds a tree of clusters that slowly breaks down into smaller groups, making a dendrogram. 
+
+**Hyperparameters**:
+- Number of clusters:
+ - The number of clusters and centroids that will form in PCA.
+- Linkage method: The method used to calculate the distance between clusters
+ - Ward (minimizes distance), Complete (maximum distance between points), Average (average distance between points), Single (minimum distance between points) 
+ 
+**Example of hierarchical clustering used in the app**:
+
+As an example, I uploaded the pizza dataset to the app and selected hierarchical clustering with these parameters:
+- Feature columns = Mois, Prot, Fat, Sodium, Carb
+- True label column = Brand
+- Number of clusters = 6
+- Linkage method = average
+
+### Results: 
+#### **2D PCA Projection**
+<img width="400" alt="Screenshot 2025-05-07 at 10 12 52 AM" src="https://github.com/user-attachments/assets/c40b6459-597e-4189-8c97-9b789a43987d" />
+<br /> Since hierarchical clustering also uses a bit of PCA, it can be helpful to see the 2D PCA projection here as well. Visualizes the 2D components of the data, and since a true column was selected (brand), the dots are colored to their corresponding brand. 
+
+#### **Dendrogram**
+<img width="400" alt="Screenshot 2025-05-07 at 10 13 49 AM" src="https://github.com/user-attachments/assets/4d6e9f95-440d-41da-8917-cf52ca411fbd" />
+<br /> The dendrogram visualizes how the hierarchical clustering algorithm works in a tree-like structure.
+
+#### **Silhouette Score Plot**
+<img width="300" alt="Screenshot 2025-05-07 at 10 14 53 AM" src="https://github.com/user-attachments/assets/75e3232c-d95f-47ed-bcff-4c437757bc5d" />
+<br /> A silhouette score measures how well the clusters are separated. A number closer to 1 indicates better separated and more dense clusters. Based on the graph and the reported best k by silhouette score that the model produces, the optimal k for this model is 5 with a score of 0.684. 
+
+#### **Evaluation Against True Labels**
+<img width="200" alt="Screenshot 2025-05-07 at 10 15 20 AM" src="https://github.com/user-attachments/assets/52f288f7-3271-496b-a1f5-054e9b43810b" />
+<br /> To determine how accurate the model is at predicting the correct classification in the clusters, it is optional to select a true label column. By choosing this, the user gets the calculated ARI score (measures similarity between cluster assignments and true labels) and accuracy score (expresses how well the model correctly classifies the data). A higher number is desired for both. 
+
