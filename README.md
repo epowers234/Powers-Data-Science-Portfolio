@@ -6,7 +6,7 @@ Repository for the projects and work performed in Introduction to Data Science a
 
 For the spring semester in 2025, I expanded on my data science skills and uploaded them within this portfolio to track my progress and growth. Projects and knowledge gained included basic data science skills such as data visualization, ethical research design, LLMs, predictive modeling (both supervised and unsupervised), etc. 
 
-Additionally, I gained a signficant amount of confidence in my coding ability, so check out my progress and what I accomplished this semester!
+Additionally, I gained a significant amount of confidence in my coding ability, so check out my progress and what I accomplished this semester!
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ The app will allow you to sort through companies' data and just look at one of t
 <img width="300" alt="Screenshot 2025-05-07 at 10 36 39 AM" src="https://github.com/user-attachments/assets/e5ace154-db50-47c3-9a5f-6b06d4085cc4" />
 
 <br />
-Check out more: [Streamlit](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/basic-streamlit-app)
+**Check out more:** [Basic Streamlit App](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/basic-streamlit-app)
 
 ## Tidy Data
 Cleaned and used tidy data principles to organize a data set on the medalists from the 2008 Olympic games to create a standardized data set that can be used to create visualizations and pivot tables for analysis using Python and Jupyter Notebooks. Having a strong foundation in data cleaning is an important and necessary step in being a data scientists because this is often the most complex, difficult, and important step in data analysis. 
@@ -43,9 +43,9 @@ Cleaned and used tidy data principles to organize a data set on the medalists fr
 
 ### Example visualization: 
 <img width="300" alt="Screenshot 2025-03-21 at 1 16 17 PM" src="https://github.com/user-attachments/assets/4d1ce6d3-7ebf-4ed4-b64e-7bc362d97ded" />
-<br />
 
-Check out more: [TidyData-Project](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/TidyData-Project)
+**Check out more:** [TidyData-Project](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/TidyData-Project)
+
 
 ## Supervised Machine Learning Streamlit App
 
@@ -75,7 +75,8 @@ The app will
 <img width="350" alt="Screenshot 2025-04-14 at 10 28 20 AM" src="https://github.com/user-attachments/assets/7d4a079c-bf5d-415e-9931-71d515698e14" />
 <br /> This graph is generated in logistic regression models for users to determine the model's performance and assess how hyperparamaters affect the model's ability to predict the outcome. 
 
-Check out more: [MLStreamlitApp](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/MLStreamlitApp)
+<br />
+**Check out more:** [MLStreamlitApp](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/MLStreamlitApp)
 
 ## Unsupervised Machine Learning Streamlit App
 
@@ -106,7 +107,8 @@ The app will
 <img width="350" alt="Screenshot 2025-05-07 at 10 13 49 AM" src="https://github.com/user-attachments/assets/3527c2de-5a02-4a52-bdbd-9eddcb6ba29f" />
 <br /> This is a visual representation of how hierarchical clustering works at clustering the data together.
 
-Check out more: [MLUnsupervisedApp](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
+<br />
+**Check out more:** [MLUnsupervisedApp](https://github.com/epowers234/Powers-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
 
 ## Contact Information
 
